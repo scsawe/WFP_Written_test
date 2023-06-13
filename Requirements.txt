@@ -1,1 +1,29 @@
+Technical requirements
+✓ Python 3.7+
+✓ Django 3+
 
+Database Schema
+
+• household
+- id
+- name
+- location
+
+• person
+- first_name
+- last_name
+- household → foreign key to household
+- phone_number
+- is_recipient – boolean defining whether the person is the designated recipient of the household. He/she will receive the case on behave of the household.
+
+• assitance_project
+- id
+- name
+- start_date
+- end_date
+
+• enrollment
+- id
+- assistance_project → foreign key to assistance_project
+- household → foreign key to household
+- cash_offer
