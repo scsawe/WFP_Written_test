@@ -62,10 +62,6 @@ b) Implement the following:
 - cash_offer
 - phone_number
 
-Technical requirements
-✓ Python 3.7+
-✓ Django 3+
-
 Deliverables
 ✓ Create a README.md on the project
 ✓ Requirements.txt
