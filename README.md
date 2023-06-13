@@ -18,31 +18,6 @@ household.
 
 • Enrollment – Refers to any household that is targeted in the assistance project.
 
-Schema
-
-• household
-- id
-- name
-- location
-
-• person
-- first_name
-- last_name
-- household → foreign key to household
-- phone_number
-- is_recipient – boolean defining whether the person is the designated recipient of the household. He/she will receive the case on behave of the household.
-- 
-• assitance_project
-- id
-- name
-- start_date
-- end_date
-
-• enrollment
-- id
-- assistance_project → foreign key to assistance_project
-- household → foreign key to household
-- cash_offer
 
 a) Implement Django app with the above schema. Create a corresponding Django Admin interface. (You could add a front end UI if necessary) (8 marks)
 
