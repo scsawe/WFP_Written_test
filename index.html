@@ -1,1 +1,86 @@
 
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Beneficiary and Cash Transfer Management Application</title>
+</head>
+<body>
+<div class="row">
+    <form action="action.php">
+        <div class="container">
+          <h1>Household</h1><!-- – Consider this a composition of family members. A household contains several members.-->
+          <p>Please fill in this form to Register a household.</p>
+          <hr>
+      
+          <label for="id"><b>Household ID</b></label>
+          <input type="text" placeholder="Enter household id" name="id" id="id" required>
+      
+          <label for="name"><b>Name</b></label>
+          <input type="text" placeholder="Enter household name" name="name" id="name" required>
+      
+          <label for="Location"><b>Household Location</b></label>
+          <input type="text" placeholder="household location" name="Location" id="Location" required>
+          <hr>
+          <h1>Person</h1><!-- – A member of a household. Every member belongs to one household-->
+          <p>Please fill in this form to Register a Every member of an household.</p>
+          <hr>
+      
+          <label for="F_name"><b>First Name</b></label>
+          <input type="text" placeholder="Enter Fisrt name" name="F_name" id="F_name" required>
+      
+          <label for="psw"><b>Last Name</b></label>
+          <input type="text" placeholder="Enter Last Name" name="L_Name" id="L_name" required>
+      
+          <label for="Household"><b>Household</b></label>
+          <input type="text" placeholder="Enter household id" name="Household" id="Household" required>
+
+          <label for="Phone"><b>Phone Number</b></label>
+          <input type="text" placeholder="Enter Phone Number" name="Phone" id="Phone" required>
+
+          <label for="Recipient"><b>Recipient</b></label>
+          <input type="text" placeholder="Enter Receiving Recipient" name="Recipient" id="Recipient" required>
+          <hr>
+          <h1>Assistance Project</h1> 
+          <!-- A programme that is used to offer cash assistance/aid to beneficiaries. Each household is usually targeted and offered cash monthly to cater for food commodity purchases at the retailers.-->
+          <p>Please fill in this form to Register a programme that is used to offer cash assistance/aid to beneficiaries.</p>
+          <hr>
+      
+          <label for="id"><b>Project ID</b></label>
+          <input type="text" placeholder="Enter assistance id" name="id" id="id" required>
+      
+          <label for="Name"><b>Name</b></label>
+          <input type="text" placeholder="Enter Name" name="name" id="name" required>
+      
+          <label for="sdate"><b>Start date</b></label>
+          <input type="text" placeholder="Start Date" name="sdate" id="sdate" required>
+
+          <label for="Edate"><b>End date</b></label>
+          <input type="text" placeholder="End Date" name="Edate" id="Edate" required>
+          <hr>
+          <h1>Enrollment</h1>
+          <p>Please fill in this form to Enroll a household that is targeted.</p>
+          <hr>
+      
+          <label for="id"><b>ID</b></label>
+          <input type="text" placeholder="Enter id" name="id" id="id" required>
+      
+          <label for="assistance_project"><b>Assistance Project</b></label>
+          <input type="text" placeholder="Enter assistance project id" name="assistance_project" id="assistance_project" required>
+      
+          <label for="household_id"><b>Targeted household ID</b></label>
+          <input type="text" placeholder="Enter household id" name="household_id" id="household_id" required>
+
+          <label for="cash_offer"><b>Cash Offer</b></label>
+          <input type="text" placeholder="Enter Amount of Cash" name="cash_offer" id="cash_offer" required>
+          <hr>
+          <button type="submit" class="registerbtn">Register</button>
+        </div>
+      </form>
+
+</div>
+  
+</body>
+</html>
