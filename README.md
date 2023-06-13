@@ -19,6 +19,7 @@ household.
 • Enrollment – Refers to any household that is targeted in the assistance project.
 
 Schema
+
 • household
 - id
 - name
@@ -54,4 +55,21 @@ b) Implement the following:
 ✓ Select one assistance project and enlist/enroll at least 3 households that will be targeted and offered $100 cash assistance. (4 marks)
 
 ✓ Using a django command, extract a CSV file summary showing all the enrollments in the assistance project and their corresponding cash offers. The file should contain the columns below: (4 marks)
+- enrollment_id
+- household_id
+- household_name
+- household_recipient’s full name
+- cash_offer
+- phone_number
+
+Technical requirements
+✓ Python 3.7+
+✓ Django 3+
+
+Deliverables
+✓ Create a README.md on the project
+✓ Requirements.txt
+✓ CSV extract
+✓ Source code in a zip file.
+
 
