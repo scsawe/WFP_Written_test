@@ -1,46 +1,57 @@
-# WFP_Written_test
-Project to implement a beneficiary registration and cash transfers management application and add a couple of django management commands
+# Beneficiary App
 
-Case study
+The Beneficiary App is a Django-based application that manages beneficiary information and assistance projects.
 
-WFP has several assistance programmes (assistance projects) that are used to periodically offer cash assistance/transfers to the targeted beneficiaries. WFP is
-intending to do registrations of about 10 families (households) affected by drought where each household will be offered $100 monthly to cater for any food commodity purchases at the several defined WFP retailers/vendors.
+## Features
 
-Given a Django application with the following schema:
+- Create, view, update, and delete beneficiary records.
+- Manage assistance projects and enroll beneficiaries.
+- Track cash assistance offered to beneficiaries.
+- Generate reports and export data in CSV format.
 
-• Household – Consider this a composition of family members. A household
-contains several members.
+## Installation
 
-• Person – A member of a household. Every member belongs to one
-household.
+1. Clone the repository: master branch
 
-• Assistance Project – A programme that is used to offer cash assistance/aid to beneficiaries. Each household is usually targeted and offered cash monthly to cater for food commodity purchases at the retailers.
+   ```shell
+   git clone https://github.com/scsawe/Cash_transfer-Repo.git
 
-• Enrollment – Refers to any household that is targeted in the assistance project.
+2. Navigate to the project directory:
+cd beneficiary-app
 
+3. Create a virtual environment:
+python3 -m venv venv
 
-a) Implement Django app with the above schema. Create a corresponding Django Admin interface. (You could add a front end UI if necessary) (8 marks)
+4. Activate the virtual environment:
 
-b) Implement the following:
+For Linux/Mac:
+source venv/bin/activate
+For Windows:
+venv\Scripts\activate
 
-✓ Django commands (4 marks)
-◦ Create 5 projects
-◦ Create 10 households with at least 5 members in each.
+5. Install the dependencies:
+pip install -r requirements.txt
 
-✓ Select one assistance project and enlist/enroll at least 3 households that will be targeted and offered $100 cash assistance. (4 marks)
+6. Run database migrations:
+python manage.py migrate
 
-✓ Using a django command, extract a CSV file summary showing all the enrollments in the assistance project and their corresponding cash offers. The file should contain the columns below: (4 marks)
-- enrollment_id
-- household_id
-- household_name
-- household_recipient’s full name
-- cash_offer
-- phone_number
+7. Start the development server:
+python manage.py runserver
 
-Deliverables
-✓ Create a README.md on the project
-✓ Requirements.txt
-✓ CSV extract
-✓ Source code in a zip file.
+8. Access the application in your web browser at http://localhost:8000/.
 
+Usage
+- Create an administrator account by running the following command:
+python manage.py createsuperuser
 
+- Log in to the admin interface at http://localhost:8000/admin/ to manage beneficiaries, assistance projects, and generate reports.
+
+Contributing
+Contributions are welcome! If you encounter any issues or have suggestions for improvements, please submit a pull request or open an issue in the GitHub repository.
+
+License
+MIT License
+
+Feel free to modify the content to suit your specific beneficiary app. You can add more sections, such as "Configuration," "Testing," or "Deployment," depending on your project's requirements. Additionally, remember to include the appropriate license information in the `LICENSE` file or replace it with the license you want to use for your project.
+
+Place this README.md file in the root directory of your beneficiary app repository, and it will serve as a helpful guide for users and contributors to understand your app and get started with it.
