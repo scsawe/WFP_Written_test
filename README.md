@@ -14,7 +14,7 @@ The Beneficiary App is a Django-based application that manages beneficiary infor
 1. Clone the repository: master branch
 
    ```shell
-   git clone https://github.com/scsawe/Cash_transfer-Repo.git
+   git clone https://github.com/scsawe/WFP_Written_test.git
 
 2. Navigate to the project directory:
 cd beneficiary-app
